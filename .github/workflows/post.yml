@@ -19,5 +19,5 @@ jobs:
       - name: Send post
         run: npm start
         env:
-          BSKY_HANDLE: ${{ repo/thatnerdhex/quotebot/secrets.BSKY_HANDLE }}
-          BSKY_PASSWORD: ${{ repo/thatnerdhex/quotebot/secrets.BSKY_PASSWORD }}
+          BSKY_HANDLE: ${{ quotebot/secrets.BSKY_HANDLE }}
+          BSKY_PASSWORD: ${{ quotebot/secrets.BSKY_PASSWORD }}
