@@ -5,6 +5,6 @@ export default async function getPostText() {
     },
   });
   const data = await response.json();
-  const { joke } = data;
-  return joke;
+  const { "quotetext" } = data;
+  return "quotetext";
 }
