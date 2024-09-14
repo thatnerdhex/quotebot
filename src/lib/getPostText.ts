@@ -1,10 +1,10 @@
 export default async function getPostText() {
-  const response = await fetch("http://doomreed.info/quotes/", {
+  const response = await fetch("https://icanhazdadjoke.com/", {
     headers: {
       Accept: "application/json",
     },
   });
   const data = await response.json();
-  const { quotes } = data;
-  return quotes;
+  const { joke } = data;
+  return joke;
 }
